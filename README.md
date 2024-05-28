@@ -1,2 +1,67 @@
 # ddos-simulation_botnet
-This project, ddos-simulation_botnet, is designed for educational purposes to simulate Distributed Denial of Service (DDoS) attacks using a network of bots managed by a central master bot. The project aims to deepen the understanding of DDoS attack mechanics and botnet behavior within a controlled environment.
+
+## Project Overview
+
+This project demonstrates the development and deployment of a master bot and subordinate bots to simulate Distributed Denial of Service (DDoS) attacks within a Local Area Network (LAN). The project is intended for educational purposes to understand the mechanics of DDoS attacks and botnet behavior.
+
+## Prerequisites
+
+1. Python 3.x
+2. Required Python libraries:
+    - `socket`
+    - `ssl`
+    - `threading`
+    - `colorama`
+    - `requests`
+    - `scapy`
+    - `logging`
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/tsharbi/ddos-simulation_botnet.git
+    cd ddos-simulation_botnet
+    ```
+
+2. Install the required Python libraries:
+    ```bash
+    pip install colorama requests scapy
+    ```
+
+3. Generate SSL certificates:
+    ```bash
+    openssl req -new -x509 -days 365 -nodes -out cert.pem -keyout key.pem
+    ```
+
+## Running the Master Bot
+
+```bash
+python master_bot.py
+```
+
+## Running the Bots
+```bash
+python bot.py
+```
+
+## Features
+
+- **Master Bot**:
+  - Acts as the command-and-control center.
+  - Lists connected bots.
+  - Executes various DDoS attacks:
+    - ICMP flood attack
+    - SYN flood attack
+    - UDP flood attack
+  - Stops ongoing DDoS attacks.
+  - Secure communication using SSL/TLS.
+
+- **Subordinate Bots**:
+  - Establish secure connections with the master bot.
+  - Execute DDoS attacks on command from the master bot.
+
+## Disclaimer
+
+This project is intended solely for educational purposes to understand DDoS attack mechanisms and botnet behavior. Use this code only in a controlled environment and with proper authorization.
+
