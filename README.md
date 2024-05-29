@@ -60,6 +60,11 @@ python bot.py
 - **Subordinate Bots**:
   - Establish secure connections with the master bot.
   - Execute DDoS attacks on command from the master bot.
+ 
+## Example of Master Bot Interface
+
+Here is an example of the Master Bot interface:
+![Master Bot Interface] (https://github.com/tsharbi/ddos-simulation_botnet/blob/main/image.png?raw=true)
 
 ## Disclaimer
 
