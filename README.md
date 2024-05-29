@@ -64,7 +64,8 @@ python bot.py
 ## Example of Master Bot Interface
 
 Here is an example of the Master Bot interface:
-![Master Bot Interface] (https://github.com/tsharbi/ddos-simulation_botnet/blob/main/image.png?raw=true)
+![Master Bot Interface]  (https://github.com/tsharbi/ddos-simulation_botnet/assets/66922177/f809241b-360a-46bc-9ffa-3445e90ac3d3)
+ 
 
 ## Disclaimer
 
